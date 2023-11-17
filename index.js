@@ -16,7 +16,7 @@ const PRIVATE_APP_ACCESS = 'pat-na1-4bc96fbd-6d54-4f51-95cd-b76932c92dd5';
 app.get('/', async (req, res) => {
   try {
     const response = await axios.get(
-      'https://api.hubapi.com/crm/v3/objects/p44412154_explorers?archived=false&properties=name,exploration_level,favorite_destination',
+      'https://api.hubapi.com/crm/v3/objects/p44412154_explorers?archived=false&properties=name,exploration_level,favorite_destination&limit=100',
       {
         headers: {
           Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
@@ -24,7 +24,7 @@ app.get('/', async (req, res) => {
         },
       }
     );
-
+    console.log(response.data.results.length);
     res.render('homepage', { explorers: response.data.results });
   } catch (error) {
     console.error('Error submitting form:', error.response ? error.response.data : error.message);
