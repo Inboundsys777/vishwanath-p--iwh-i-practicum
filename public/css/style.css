@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 1rem;
-}
-
 .cards {
     display: flex;
     align-items: center;
@@ -40,7 +30,8 @@ h1 {
     box-shadow: 3px 2px 6px lightgrey;
 }
 
-label, input {
+label,
+input {
     margin-top: 5px;
     display: block;
     font-size: inherit;
@@ -55,4 +46,89 @@ input[type="submit"] {
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+
+/* Add this to your CSS file or in a <style> tag in your HTML file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Use a suitable font-family for your design */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    /* Set the background color to a desired color */
+    color: #fff;
+    /* Set the text color to a contrasting color */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    /* Set the font size for the heading */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    /* Set the font size for paragraphs */
+    margin: 0;
+}
+
+/* Add more styles as needed for your specific design */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    /* Adjust the width as needed */
+    margin: auto;
+    /* Center the table */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }
